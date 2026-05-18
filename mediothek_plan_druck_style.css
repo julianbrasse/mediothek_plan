@@ -1,0 +1,104 @@
+@page {
+	size: A2 portrait;
+	margin: 0;
+}
+
+:root {
+	width: 42cm;
+	height: 59.4cm;
+}
+
+* {
+	margin: unset;
+	padding: unset;
+	box-sizing: border-box;
+	scrollbar-width: none;
+	border: unset;
+	outline: unset;
+	appearance: unset;
+	text-decoration: unset;
+	font-family: inherit;
+	color: inherit;
+	background: inherit;
+}
+
+body {
+	margin: 1cm;
+	width: 40cm;
+	height: 57.4cm;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+h1 {
+	font-size: 3cm;
+}
+
+h2 {
+	font-size: 1.8cm;
+}
+
+h3 {
+	font-size: 1.5cm;
+}
+
+p {
+	display: flex;
+	gap: 0.2cm;
+	align-items: center;
+	font-size: 0.6cm;
+}
+
+section {
+	display: flex;
+	gap: 0.2cm;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+section.left {
+	justify-content: flex-start;
+
+	& h3 {
+		writing-mode: sideways-lr;
+	}
+}
+
+section.right {
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	& h3 {
+		writing-mode: sideways-rl;
+	}
+}
+
+div {	
+	display: flex;
+	flex-direction: column;
+}
+
+div.spacing {
+	gap: 1cm;
+}
+
+div.right {
+	align-items: flex-end;
+}
+
+.map {
+	width: 26cm;
+	border-radius: 0.5cm;
+}
+
+svg, .icon {
+	width: 0.5cm;
+	height: 0.5cm;
+}
+
+#spanisch {
+	border: solid 0.01cm #000;
+	border-radius: 1cm;
+}
