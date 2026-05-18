@@ -1,0 +1,107 @@
+@page {
+	size: A5 portrait;
+	margin: 0;
+}
+
+:root {
+	width: 14.8cm;
+	height: 21cm;
+}
+
+* {
+	margin: unset;
+	padding: unset;
+	box-sizing: border-box;
+	scrollbar-width: none;
+	border: unset;
+	outline: unset;
+	appearance: unset;
+	text-decoration: unset;
+	font-family: inherit;
+	color: inherit;
+	background: inherit;
+}
+
+body {
+	margin: 0.4cm;
+	width: 14cm;
+	height: 20.2cm;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+h1 {
+	font-size: 1.4cm;
+}
+
+h2 {
+	font-size: 0.8cm;
+}
+
+p {
+	display: flex;
+	gap: 0.2cm;
+	align-items: center;
+	font-size: 0.6cm;
+}
+
+i {
+	font-style: normal;
+	font-family: "Neue Haas Grotesk Text";
+	font-size: 0.4cm;
+}
+
+section {
+	display: flex;
+	gap: 0.2cm;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+section.categories {
+	padding: 0.4cm;
+	gap: unset;
+	flex-direction: column;
+	justify-content: unset;
+	align-items: flex-start;
+	background-color: var(--hintergrund);
+	border-radius: 0.5cm;
+
+	& div {
+		gap: 0.2cm;
+		flex-direction: row;
+
+		& i:first-child {
+			font-family: inherit;
+		}
+	}
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+}
+
+div.spacing {
+	gap: 0.4cm;
+}
+
+div.right {
+	align-items: flex-end;
+}
+
+.map {
+	border-radius: 0.5cm;
+}
+
+svg, .icon {
+	width: 0.5cm;
+	height: 0.5cm;
+}
+
+#spanisch {
+	border: solid 0.01cm #000;
+	border-radius: 1cm;
+}
